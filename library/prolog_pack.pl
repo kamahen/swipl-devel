@@ -34,6 +34,27 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
+/* TODO: DOCUMENTATION
+   https://www.swi-prolog.org/howto/Pack.md
+   https://www.swi-prolog.org/howto/ForeignPack.md
+   https://www.swi-prolog.org/howto/PackInfo.md
+   https://www.swi-prolog.org/howto/PackTodo.md
+   https://www.swi-prolog.org/pldoc/man?section=packs
+   https://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
+   https://rlaanemets.com/prolog-pack-development-experience
+
+   https://www.swi-prolog.org/howto/cpp-compiling.html
+
+   ~/src/plweb/data/git/www/howto/cpp-compiling.md
+   ~/src/plweb/data/git/www/howto/PackInfo.md
+   ~/src/plweb/data/git/www/howto/Pack.md
+   ~/src/plweb/data/git/www/howto/ForeignPack.md
+   ~/src/plweb/data/git/www/howto/PackTodo.md
+   ~/src/swipl-devel/man/packs.doc
+   ~/src/plweb/pack.pl
+   prolog_pack.pl
+*/
+
 :- module(prolog_pack,
           [ pack_list_installed/0,
             pack_info/1,                % +Name
@@ -672,8 +693,8 @@ search_info(download(_)).
 %       ``https://www.swi-prolog.org/pack/``
 %
 %   Non-interactive installation can be established using the option
-%   interactive(false). It is adviced to   install from a particular
-%   _trusted_ URL instead of the  plain   pack  name  for unattented
+%   interactive(false). It is advised to   install from a particular
+%   _trusted_ URL instead of the  plain   pack  name  for unattended
 %   operation.
 
 pack_install(Spec) :-
